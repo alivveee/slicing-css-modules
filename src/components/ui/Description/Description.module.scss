@@ -1,5 +1,5 @@
 .description {
-    @include body;
+    @include font-body;
 }
 
 .default {
@@ -8,6 +8,10 @@
 
 .muted {
     color: var(--text-on-brand-muted);
+}
+
+.dark-muted {
+    color: var(--text-on-dark-muted);
 }
 
 .left {

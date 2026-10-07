@@ -1,5 +1,5 @@
 import type { HTMLAttributes } from 'react'
-import joinClassName from '@/helper/joinClassName'
+import joinClassName from '@/helper/joinClassName.helper'
 import styles from './Container.module.scss'
 
 type Props = HTMLAttributes<HTMLDivElement>

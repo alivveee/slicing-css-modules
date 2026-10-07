@@ -1,12 +1,11 @@
 import type { HTMLAttributes } from 'react'
 import { Container } from '../Container/Container'
-import joinClassName from '@/helper/joinClassName'
+import joinClassName from '@/helper/joinClassName.helper'
+import type { SurfaceTone } from '../../../config/tone.config'
 import styles from './Section.module.scss'
 
-type Tone = 'light' | 'dark' | 'blue'
-
 type Props = HTMLAttributes<HTMLElement> & {
-    tone?: Tone
+    tone?: SurfaceTone
 }
 
 export function Section({

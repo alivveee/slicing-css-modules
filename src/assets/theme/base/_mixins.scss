@@ -12,3 +12,10 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin config-typography($size, $ls, $line, $weight: $fw-extrabold) {
+    font-size: $size;
+    letter-spacing: $ls;
+    line-height: $line;
+    font-weight: $weight;
+}

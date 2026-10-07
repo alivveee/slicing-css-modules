@@ -1,55 +1,67 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
-@mixin heading($size, $line, $weight: $fw-extrabold) {
-    font-family: $font-primary;
-    font-size: $size;
-    line-height: $line;
-    font-weight: $weight;
-    letter-spacing: $ls-heading;
+/* typography heading */
+.h6,
+h6 {
+    @include config-typography(16px, $ls-heading, 20px, $fw-semibold);
+
+    @include up(lg) {
+        @include config-typography(18px, $ls-heading, 24px, $fw-semibold);
+    }
+}
+
+.h5,
+h5 {
+    @include config-typography(18px, $ls-heading, 24px, $fw-semibold);
+
+    @include up(lg) {
+        @include config-typography(20px, $ls-heading, 26px, $fw-semibold);
+    }
+}
+
+.h4,
+h4 {
+    @include config-typography(20px, $ls-heading, 26px, $fw-semibold);
+
+    @include up(lg) {
+        @include config-typography(24px, $ls-heading, 30px, $fw-semibold);
+    }
+}
+
+.h3,
+h3 {
+    @include config-typography(18px, $ls-heading, 28px, $fw-bold);
+
+    @include up(lg) {
+        @include config-typography(20px, $ls-heading, 30px, $fw-bold);
+    }
+}
+
+.h2,
+h2 {
+    @include config-typography(24px, $ls-heading, 30px, $fw-extrabold);
     text-transform: uppercase;
-}
-
-@mixin h1 {
-    @include heading(28px, 36px);
 
     @include up(lg) {
-        @include heading(40px, 49px);
+        @include config-typography(32px, $ls-heading, 39px, $fw-extrabold);
     }
 }
 
-@mixin h2 {
-    @include heading(24px, 30px);
+.h1,
+h1 {
+    @include config-typography(28px, $ls-heading, 36px, $fw-extrabold);
+    text-transform: uppercase;
 
     @include up(lg) {
-        @include heading(32px, 39px);
+        @include config-typography(40px, $ls-heading, 49px, $fw-extrabold);
     }
 }
 
-@mixin h3 {
-    @include heading(18px, 28px, $fw-bold);
-
-    @include up(lg) {
-        @include heading(20px, 30px, $fw-bold);
-    }
-}
-
-@mixin body {
+@mixin font-body {
     font: $fw-regular 16px/26px $font-primary;
 }
 
-@mixin body-medium {
-    font: $fw-medium 16px/26px $font-primary;
-}
-
-@mixin subtitle {
-    font: $fw-regular 14px/24px $font-primary;
-}
-
-@mixin button-text {
+button {
     font: $fw-semibold 16px/20px $font-primary;
-}
-
-@mixin caption {
-    font: $fw-medium 12px/15px $font-primary;
 }

@@ -16,12 +16,7 @@
     padding-left: $space-3;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: $space-3;
-}
-
-.media {
-    // wrapper: image menjaga aspect ratio saat grid cell stretch
 }
 
 .image {

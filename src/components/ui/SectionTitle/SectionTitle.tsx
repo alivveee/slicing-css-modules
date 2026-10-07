@@ -1,14 +1,13 @@
-import joinClassName from '@/helper/joinClassName'
+import joinClassName from '@/helper/joinClassName.helper'
+import type { SurfaceTone } from '../../../config/tone.config'
 import styles from './SectionTitle.module.scss'
-
-type Tone = 'light' | 'dark' | 'blue'
 
 type Props = {
     before?: string
     highlight: string
     after?: string
     as?: 'h1' | 'h2'
-    tone?: Tone
+    tone?: SurfaceTone
 }
 
 export function SectionTitle({

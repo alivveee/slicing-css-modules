@@ -1,5 +1,5 @@
 import type { ButtonHTMLAttributes } from 'react'
-import joinClassName from '@/helper/joinClassName'
+import joinClassName from '@/helper/joinClassName.helper'
 import styles from './Button.module.scss'
 
 type Variant = 'primary' | 'outline' | 'light'

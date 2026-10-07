@@ -1,12 +1,12 @@
 import type { HTMLAttributes } from 'react'
-import joinClassName from '@/helper/joinClassName'
+import joinClassName from '@/helper/joinClassName.helper'
+import type { DescriptionTone } from '../../../config/tone.config'
 import styles from './Description.module.scss'
 
-type Tone = 'default' | 'muted'
 type Align = 'left' | 'center'
 
 type Props = HTMLAttributes<HTMLParagraphElement> & {
-    tone?: Tone
+    tone?: DescriptionTone
     align?: Align
 }
 

@@ -1,6 +1,5 @@
 .button {
     @include flex-center;
-    @include button-text;
     padding: 15px 30px;
     border-radius: $radius-pill;
     border: 1px solid transparent;

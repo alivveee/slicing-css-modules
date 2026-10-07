@@ -17,7 +17,7 @@ export function Synergy() {
             <div className={styles.grid}>
                 <div className={styles.copy}>
                     <Subtitle tone="dark">Advanced AI Assistant</Subtitle>
-                    <Description tone="muted">
+                    <Description tone="dark-muted">
                         This paragraph mainly talk about our advanced and smarter
                         AI that are scalable and seamless switch between AI and
                         real CS

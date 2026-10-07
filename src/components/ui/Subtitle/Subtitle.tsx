@@ -1,13 +1,13 @@
 import type { HTMLAttributes } from 'react'
-import joinClassName from '@/helper/joinClassName'
+import joinClassName from '@/helper/joinClassName.helper'
+import type { SurfaceTone } from '../../../config/tone.config'
 import styles from './Subtitle.module.scss'
 
-type Tone = 'light' | 'dark' | 'blue'
 type Align = 'left' | 'center'
 
 type Props = HTMLAttributes<HTMLHeadingElement> & {
     as?: 'h3' | 'h4'
-    tone?: Tone
+    tone?: SurfaceTone
     align?: Align
 }
 

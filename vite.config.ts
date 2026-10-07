@@ -20,7 +20,7 @@ export default defineConfig({
         preprocessorOptions: {
             scss: {
                 loadPaths: [path.join(srcDir, 'assets/theme/base')],
-                additionalData: (content, filepath) => {
+                additionalData: (content, filepath) => { 
                     const normalized = filepath.replace(/\\/g, '/')
                     if (normalized.includes('/src/assets/theme/'))
                         return content

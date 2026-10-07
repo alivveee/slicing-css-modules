@@ -7,7 +7,7 @@
 .inner {
     display: flex;
     align-items: center;
-    min-height: 72px; // nilai intrinsik Figma (tinggi header), bukan token
+    min-height: 72px;
 }
 
 .logo {
@@ -17,6 +17,6 @@
     img {
         display: block;
         width: auto;
-        height: 43px; // nilai intrinsik Figma (tinggi logo), bukan token
+        height: 43px;
     }
 }

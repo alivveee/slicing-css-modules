@@ -20,7 +20,6 @@
 }
 
 .title {
-    @include h1;
     color: var(--text-primary);
 }
 
@@ -29,8 +28,6 @@
 }
 
 .subtitle {
-    @include body;
-    color: var(--text-secondary);
     margin-block: $space-4 $space-5;
 }
 
