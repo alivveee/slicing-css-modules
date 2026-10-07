@@ -1,0 +1,33 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-5;
+    margin-top: $space-6;
+
+    @include up(lg) {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+.copy {
+    height: 240px;
+    border-left: 4px solid var(--border-brand);
+    padding-left: $space-3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $space-3;
+}
+
+.media {
+    // wrapper: image menjaga aspect ratio saat grid cell stretch
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border-default);
+    border-radius: $radius-media;
+}

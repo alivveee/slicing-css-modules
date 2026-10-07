@@ -1,0 +1,23 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-5;
+    margin-top: $space-6;
+
+    @include up(lg) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $space-3;
+}
+
+.icon {
+    display: block;
+    width: 110px;
+    height: auto;
+}

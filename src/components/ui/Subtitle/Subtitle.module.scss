@@ -1,0 +1,23 @@
+.subtitle {
+    @include h3;
+}
+
+.light {
+    color: var(--text-primary);
+}
+
+.dark {
+    color: var(--text-on-dark);
+}
+
+.blue {
+    color: var(--text-on-brand);
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}

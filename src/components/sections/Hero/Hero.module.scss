@@ -1,0 +1,55 @@
+.hero {
+    @include up(md) {
+        padding-block: $space-6;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-5;
+    align-items: center;
+
+    @include up(md) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.content {
+    max-width: 555px;
+}
+
+.title {
+    @include h1;
+    color: var(--text-primary);
+}
+
+.highlight {
+    color: var(--color-primary);
+}
+
+.subtitle {
+    @include body;
+    color: var(--text-secondary);
+    margin-block: $space-4 $space-5;
+}
+
+.visual {
+    order: -1;
+
+    @include up(md) {
+        order: 0;
+    }
+}
+
+.image {
+    display: block;
+    width: 100%;
+    max-width: 553px;
+    margin-inline: auto;
+
+    @include up(md) {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}

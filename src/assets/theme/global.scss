@@ -1,0 +1,76 @@
+@use 'index' as *;
+
+:root {
+    // --- Brand ---
+    --color-primary:        #{$blue-800};
+    --color-primary-hover:  #{$blue-900};
+    --color-primary-bright: #{$blue-600};
+    --color-primary-strong: #{$blue-700};
+    --color-info:           #{$blue-500};
+    --color-info-soft:      #{$blue-300};
+    --color-info-tint:      #{$blue-200};
+    --color-accent:         #{$orange-500};
+    --color-accent-light:   #{$orange-400};
+    --color-accent-lighter: #{$orange-300};
+    --color-accent-dark:    #{$orange-600};
+    --color-success:        #{$green-500};
+    --color-sky:            #{$blue-sky};
+
+    // --- Background ---
+    --bg-page:    #{$neutral-0};
+    --bg-surface: #{$neutral-50};
+    --bg-inverse: #{$neutral-950};
+    --bg-brand:   #{$blue-800};
+    --bg-on-brand: #{$neutral-0};
+
+    // --- Text ---
+    --text-primary:        #{$neutral-900};
+    --text-secondary:      #{$neutral-700};
+    --text-placeholder:    #{$neutral-400};
+    --text-link:           #{$blue-800};
+    --text-on-brand:       #{$neutral-0};
+    --text-on-brand-muted: #{$neutral-150};
+    --text-on-dark:        #{$neutral-0};
+    --text-on-dark-muted:  rgba(255, 255, 255, 0.5);
+    --text-on-dark-soft:   #{$neutral-100};
+    --text-on-accent:      #{$neutral-0};
+
+    // --- Border & focus ---
+    --border-default: #{$neutral-200};
+    --border-subtle:  #{$neutral-250};
+    --border-strong:  #{$neutral-300};
+    --border-brand:   #{$blue-800};
+    --focus-ring:     #{$blue-800};
+
+    // --- Highlight judul ---
+    --highlight-on-light: #{$blue-800};
+    --highlight-on-dark:  #{$blue-500};
+
+    // --- Efek ---
+    --shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    @include body;
+    color: var(--text-secondary);
+    background: var(--bg-page);
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

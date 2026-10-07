@@ -1,0 +1,9 @@
+.title {
+    @include h2;
+    text-align: center;
+    color: inherit;
+}
+
+.highlight {
+    color: var(--highlight, var(--highlight-on-light));
+}

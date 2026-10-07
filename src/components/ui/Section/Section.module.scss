@@ -1,0 +1,21 @@
+.section {
+    padding-block: $space-6;
+}
+
+.light {
+    background: var(--bg-page);
+    color: var(--text-secondary);
+    --highlight: var(--highlight-on-light);
+}
+
+.dark {
+    background: var(--bg-inverse);
+    color: var(--text-on-dark);
+    --highlight: var(--highlight-on-dark);
+}
+
+.blue {
+    background: var(--bg-brand);
+    color: var(--text-on-brand);
+    --highlight: var(--text-on-brand);
+}

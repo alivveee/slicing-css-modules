@@ -1,0 +1,22 @@
+.header {
+    width: 100%;
+    background: var(--bg-page);
+    border-bottom: 1px solid var(--border-default);
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    min-height: 72px; // nilai intrinsik Figma (tinggi header), bukan token
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+
+    img {
+        display: block;
+        width: auto;
+        height: 43px; // nilai intrinsik Figma (tinggi logo), bukan token
+    }
+}
